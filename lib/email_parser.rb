@@ -11,6 +11,7 @@ class EmailParser
   end
 
   def parse
+    # Source Review: https://stackoverflow.com/questions/5254732/difference-between-map-and-collect-in-ruby
     emails.split.map do |emails|
       emails.split(',')
     end.flatten.uniq
